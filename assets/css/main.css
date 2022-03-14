@@ -250,7 +250,7 @@ header .mobile-nav ul li a {
 
 .banner {
   height: 85vh;
-  background-image: url("/images/banner.jpeg");
+  background-image: url("./images/banner.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
