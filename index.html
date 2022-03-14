@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js" lang="" ng-app="myApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SATL</title>
+    <!-- <base href="/" /> -->
+    <!--add back on production -->
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="SATL" />
+    <link rel="canonical" href="https://www.eduplana.com" />
+    <meta name="robots" content="index" />
+
+    <meta property="og:url" content="http://satlfreight.ng" />
+    <meta property="og:image" content="http://satlfreight.ng/favicon.png" />
+    <meta property="og:image:width" content="90" />
+    <meta property="og:image:height" content="76" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SATL" />
+    <meta property="og:site_name" content="EduSATLplana" />
+    <meta property="og:description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="http://www.satlfreight.com/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="assets/floating-whatsapp/floating-wpp.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+
+  <body ng-controller="generalController">
+
+    <header>
+      <div class="logo-wrap">
+        <div class="container">
+          <div class="logo-section">
+            <div class="logo">
+              <img src="images/logo.jpeg" alt="">
+            </div>
+            <div class="info">
+              <ul class="hide-on-mobile">
+                <li>
+                  <div class="title">Call us</div>
+                  <div class="content">1-888-777-990</div>
+                </li>
+                <li>
+                  <div class="title">Working Hours</div>
+                  <div class="content">Mon - Fri 10 to 5pm</div>
+                </li>
+                <li>
+                  <div class="title">Email Us</div>
+                  <div class="content">hello@logistics.com</div>
+                </li>
+              </ul>
+              <a href="mailto:test@gmail.com" class="button">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul class="hide-on-mobile">
+            <li>
+              <a ui-sref="home">Home</a>
+            </li>
+            <li>
+              <a ui-sref="about">About</a>
+            </li>
+            <li>
+              <a ui-sref="services">Services</a>
+            </li>
+            <li>
+              <a ui-sref="contact">Contact</a>
+            </li>
+            <li>
+              <a ui-sref="careers">Careers</a>
+            </li>
+          </ul>
+          <ul class="hide-on-desktop mobile-menu">
+            <li>
+              <button class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mobile-nav hide-on-desktop">
+        <ul>
+          <li>
+            <a ui-sref="home">Home</a>
+          </li>
+          <li>
+            <a ui-sref="about">About</a>
+          </li>
+          <li>
+            <a ui-sref="services">Services</a>
+          </li>
+          <li>
+            <a ui-sref="contact">Contact</a>
+          </li>
+          <li>
+            <a ui-sref="careers">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div ui-view></div>
+
+    <footer>
+      <div class="container">
+          <div class="wrap">
+              <div class="copy">
+                      Copyright © <span id="year"></span> All rights reserved.
+              </div>
+              <div class="social">
+                  <ul>
+                      <li><a target="_blank" href=""><img src="images/Facebook.svg" alt=""></a></li>
+                      <li><a target="_blank" href=""><img src="images/Instagram.svg" alt=""></a></li>
+                      <li><a target="_blank" href=""><img src="images/Twitter.svg" alt=""></a></li>
+                      <li><a target="_blank" href=""><img src="images/LinkedIN.svg" alt=""></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="assets/js/angularjs/angular.min.js"></script>
+    <script src="assets/js/angularjs/angular-animate.js"></script>
+    <script src="assets/js/angularjs/angular-ui-router.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controllers/generalController.js"></script>
+
+    <script>
+
+      var d = new Date();
+      var n = d.getFullYear();
+      document.getElementById('year').innerHTML = n;
+
+      $(document).ready(function(){
+        $('.mobile-menu').click(function(){
+          $('.mobile-nav').toggle();
+        })
+      })
+    </script>
+  </body>
+</html>
