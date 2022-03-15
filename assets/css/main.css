@@ -475,14 +475,14 @@ header .mobile-nav ul li a {
   background: #fff;
   width: 48%;
   margin-bottom: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media (max-width: 991px) {
   .featured-services .services-wrapper .service-card {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

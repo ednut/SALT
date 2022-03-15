@@ -373,9 +373,9 @@ header{
       background: #fff;
       width: 48%;
       margin-bottom: 3rem;
-      display: flex;
       @media (max-width: 991px) {
         width: 100%;
+        display: flex;
       }
       .image{
         background-repeat: no-repeat;
