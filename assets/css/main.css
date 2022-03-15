@@ -304,13 +304,19 @@ header .mobile-nav ul li a {
 @media (max-width: 991px) {
   .banner .overlay .title {
     width: 100%;
-    line-height: 50px;
-    font-size: 40px;
+    line-height: 40px;
+    font-size: 30px;
   }
 }
 
 .services {
   margin-top: -4rem;
+}
+
+@media (max-width: 991px) {
+  .services {
+    margin-top: 2rem;
+  }
 }
 
 .services .card-wrap {

@@ -241,8 +241,8 @@ header{
       font-family: roboto condensed,sans-serif;
       @media (max-width: 991px) {
         width: 100%;
-        line-height: 50px;
-        font-size: 40px;
+        line-height: 40px;
+        font-size: 30px;
       }
     }
   }
@@ -250,6 +250,9 @@ header{
 
 .services{
   margin-top: -4rem;
+  @media (max-width: 991px) {
+    margin-top: 2rem;
+  }
   .card-wrap{
     display: flex;
     flex-wrap: nowrap;
