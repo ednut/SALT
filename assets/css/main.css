@@ -475,6 +475,9 @@ header .mobile-nav ul li a {
   background: #fff;
   width: 48%;
   margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 991px) {
@@ -487,7 +490,6 @@ header .mobile-nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 30%;
   height: 100%;
   width: 222px;
   -webkit-clip-path: none;
@@ -496,6 +498,14 @@ header .mobile-nav ul li a {
   vertical-align: middle;
   -webkit-clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+}
+
+@media (max-width: 991px) {
+  .featured-services .services-wrapper .service-card .image {
+    width: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 .featured-services .services-wrapper .service-card .content {
@@ -507,6 +517,12 @@ header .mobile-nav ul li a {
   display: table-cell;
   vertical-align: middle;
   padding: 30px;
+}
+
+@media (max-width: 991px) {
+  .featured-services .services-wrapper .service-card .content {
+    width: 100%;
+  }
 }
 
 .featured-services .services-wrapper .service-card .content .content-title {
