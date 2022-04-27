@@ -6,16 +6,16 @@ var myApp = angular.module('myApp', [
   'myApp.models'
 ]);
 
-myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) { // use this in production
-// myApp.config(function ($stateProvider, $urlRouterProvider) {
-  $locationProvider.html5Mode(true);
-  $urlRouterProvider.otherwise(function($injector) {
-  	$injector.invoke(function($state) {
-  			$state.transitionTo("404", {}, false);
-  	});
-  }); // use in production
+// myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) { // use this in production
+myApp.config(function ($stateProvider, $urlRouterProvider) {
+  // $locationProvider.html5Mode(true);
+  // $urlRouterProvider.otherwise(function($injector) {
+  // 	$injector.invoke(function($state) {
+  // 			$state.transitionTo("404", {}, false);
+  // 	});
+  // }); // use in production
 
-  // $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('home', {
