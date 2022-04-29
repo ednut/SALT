@@ -84,6 +84,10 @@ ul {
   display: flex;
 }
 
+.center{
+  text-align: center;
+}
+
 .mb-5{
   margin-bottom: 5rem;
 }
@@ -274,6 +278,8 @@ header {
       }
       .title {
         margin: auto;
+        font-size: 35px;
+        line-height: 47px;
         @media (max-width: 991px) {
           font-size: 26px;
         }

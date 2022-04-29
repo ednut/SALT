@@ -97,6 +97,10 @@ ul {
   display: flex;
 }
 
+.center {
+  text-align: center;
+}
+
 .mb-5 {
   margin-bottom: 5rem;
 }
@@ -348,6 +352,8 @@ header .mobile-nav ul li a {
 
 .banner.bottom .overlay .title {
   margin: auto;
+  font-size: 35px;
+  line-height: 47px;
 }
 
 @media (max-width: 991px) {
