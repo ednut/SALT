@@ -335,6 +335,12 @@ header .mobile-nav ul li a {
   background-attachment: fixed;
 }
 
+@media (max-width: 991px) {
+  .banner.bottom {
+    height: 70vh;
+  }
+}
+
 .banner.bottom .overlay {
   text-align: center;
 }
@@ -346,7 +352,7 @@ header .mobile-nav ul li a {
 @media (max-width: 991px) {
   .banner.bottom .overlay .caption {
     margin-top: 7vh;
-    font-size: 30px;
+    font-size: 34px;
   }
 }
 
@@ -359,6 +365,7 @@ header .mobile-nav ul li a {
 @media (max-width: 991px) {
   .banner.bottom .overlay .title {
     font-size: 26px;
+    line-height: 29px;
   }
 }
 

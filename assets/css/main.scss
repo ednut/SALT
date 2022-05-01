@@ -267,13 +267,16 @@ header {
   &.bottom {
     height: 50vh;
     background-attachment: fixed;
+    @media (max-width: 991px) {
+      height: 70vh;
+    }
     .overlay {
       text-align: center;
       .caption {
         margin-top: 7vh;
         @media (max-width: 991px) {
           margin-top: 7vh;
-          font-size: 30px;
+          font-size: 34px;
         }
       }
       .title {
@@ -282,6 +285,7 @@ header {
         line-height: 47px;
         @media (max-width: 991px) {
           font-size: 26px;
+          line-height: 29px;
         }
       }
       .button {
